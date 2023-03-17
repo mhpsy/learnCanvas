@@ -9,7 +9,7 @@
         <el-header style="padding: 0;">
           <AHeader/>
         </el-header>
-        <el-main>
+        <el-main class="elMAIN">
           <router-view/>
         </el-main>
       </el-container>
@@ -25,5 +25,8 @@ import AHeader from "@/Layout/com/AHeader.vue";
 </script>
 
 <style scoped>
+.elMAIN {
+  padding: 0;
+}
 
 </style>

@@ -1,9 +1,8 @@
 <template>
-  <el-button type="primary" @click="showSource">{{ buttonName }}</el-button>
-  <div class="canvas01">
-    <h1>CanvasLayout</h1>
+  <div class="box">
+    <el-button size="small" type="primary" @click="showSource">{{ buttonName }}</el-button>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <script setup>
