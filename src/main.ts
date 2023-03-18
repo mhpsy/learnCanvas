@@ -21,6 +21,11 @@ for (const key of Object.keys(ElementPlusIconsVue)) {
     app.component(key, ElementPlusIconsVue[key as keyof typeof ElementPlusIconsVue])
 }
 
+import * as highlight from 'highlight.js'//引入highlight.js
+import 'highlight.js/styles/atom-one-dark.css'//引入样式
+
+app.config.globalProperties.$highlight = highlight
+
 app.use(createPinia())
 app.use(router)
 
