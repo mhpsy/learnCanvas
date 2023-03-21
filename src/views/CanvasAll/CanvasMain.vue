@@ -12,6 +12,7 @@ import {computed} from "vue";
 
 import Canvas01 from "@/views/CanvasAll/com/Canvas01/Canvas01.vue";
 import Canvas02 from "@/views/CanvasAll/com/Canvas02/Canvas02.vue";
+import Canvas03 from "@/views/CanvasAll/com/Canvas03/Canvas03.vue";
 
 const route = useRoute();
 const id = route.params.id;
@@ -25,7 +26,7 @@ const componentName = computed(() => {
     case "2":
       return Canvas02;
     default:
-      return Canvas01;
+      return Canvas03;
   }
 })
 
